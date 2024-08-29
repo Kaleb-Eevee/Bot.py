@@ -27,7 +27,7 @@ async def password(ctx):
 
 @bot.command()
 async def Iloveyou(ctx):
-    await ctx.send("OSTIA LILY, SOY TU FAN 😍")
+    await ctx.send("Yo también te quiero 😍")
 
 @bot.command()
 async def joined(ctx, member: discord.Member):
@@ -37,4 +37,4 @@ async def joined(ctx, member: discord.Member):
 async def Voidmeme(ctx):
     await ctx.send("Eso es muy void de tu parte 👀")
 
-bot.run("EL TOKEN DEBE IR AQUI")
+bot.run("MTI3NTk3ODU5MjkzMjg2MDA3OA.Gg2F-0.9KxrIVsmIwldVIIWqhUMdVPxw7gqV7Vm_mENis")
