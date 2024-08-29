@@ -37,4 +37,4 @@ async def joined(ctx, member: discord.Member):
 async def Voidmeme(ctx):
     await ctx.send("Eso es muy void de tu parte 👀")
 
-bot.run("MTI3NTk3ODU5MjkzMjg2MDA3OA.Gg2F-0.9KxrIVsmIwldVIIWqhUMdVPxw7gqV7Vm_mENis")
+bot.run("TU TOKEN DEBE ESTAR AQUÍ")
