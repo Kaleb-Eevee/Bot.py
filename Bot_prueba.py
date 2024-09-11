@@ -37,4 +37,30 @@ async def joined(ctx, member: discord.Member):
 async def Voidmeme(ctx):
     await ctx.send("Eso es muy void de tu parte 👀")
 
-bot.run("TU TOKEN DEBE ESTAR AQUÍ")
+@bot.command()
+async def prog_meme(ctx):
+    with open("memes/mem1.jpg", "rb") as f:
+        picture = discord.File(f)
+        await ctx.send(file=picture)
+
+@bot.command()
+async def ran_p_meme(ctx):
+    mem_alet = random.choice(os.listdir("memes"))
+
+    with open(f"memes/{mem_alet}", "rb") as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+
+def get_duck_image_url():    
+    url = 'https://random-d.uk/api/random'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
+
+
+@bot.command('duck')
+async def duck(ctx):
+    image_url = get_duck_image_url()
+    await ctx.send(image_url)
+
+bot.run("EL TOKEN DEBE IR AQUI")
